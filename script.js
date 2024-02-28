@@ -1,8 +1,21 @@
-let listaSpesa = ["pane", "latte", "pasta", "verdura", "frutta", "noci"];
-const contatore = 0;
-const output = " ";
+const list = ["pane", "latte", "pasta", "verdura", "frutta", "noci"];
 
-while  ( contatore < listaSpesa.lenght){
-  output +="<p>"
-  contatore++; 
-}
+let counter = 0;
+
+// const output = " ";
+
+// while  ( contatore < listaSpesa.lenght){
+//   listaSpesa.innerHTML += ``
+// }
+
+const listCourses = document.querySelector ('.list');
+console.log(listCourses);
+
+
+  while( counter < list.length){
+    listCourses.innerHTML += ` <li>${list[counter]}<li>`;
+
+    counter++;
+  }
+
+  counter++;
